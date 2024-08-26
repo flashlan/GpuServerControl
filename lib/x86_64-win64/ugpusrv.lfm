@@ -1,0 +1,192 @@
+object FormGpuControl: TFormGpuControl
+  Left = 1202
+  Height = 353
+  Top = 711
+  Width = 481
+  Caption = 'Gpu Server Control'
+  ClientHeight = 353
+  ClientWidth = 481
+  LCLVersion = '3.4.0.0'
+  object ButtonClose: TButton
+    Left = 392
+    Height = 25
+    Top = 296
+    Width = 75
+    Caption = 'Fechar'
+    TabOrder = 0
+    OnClick = ButtonCloseClick
+  end
+  object SyncButton: TButton
+    Left = 120
+    Height = 25
+    Hint = 'Entra por ssh e sincroniza os dados no servidor'
+    Top = 8
+    Width = 256
+    Caption = 'Sync DEV folder on Server with Nexcloud'
+    TabOrder = 1
+    OnClick = SyncButtonClick
+  end
+  object vpnButton: TButton
+    Left = 24
+    Height = 25
+    Top = 8
+    Width = 88
+    Caption = 'Connect VPN'
+    TabOrder = 2
+    OnClick = vpnButtonClick
+  end
+  object Button3: TButton
+    Left = 392
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Build it'
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object PageControl1: TPageControl
+    Left = 24
+    Height = 240
+    Top = 48
+    Width = 440
+    ActivePage = TabSheet1
+    TabIndex = 0
+    TabOrder = 4
+    object TabSheet1: TTabSheet
+      Caption = 'Gpu-Server'
+      ClientHeight = 211
+      ClientWidth = 436
+      object Bevel1: TBevel
+        Left = 8
+        Height = 168
+        Top = 32
+        Width = 312
+        OnChangeBounds = Bevel1ChangeBounds
+      end
+      object BtOllamaWeb: TButton
+        Left = 160
+        Height = 25
+        Top = 40
+        Width = 150
+        Caption = 'Ollama Web'
+        TabOrder = 0
+        OnClick = BtOllamaWebClick
+      end
+      object ButtonNvidiaSmi: TButton
+        Left = 336
+        Height = 25
+        Top = 40
+        Width = 88
+        Caption = 'Nvidia-SMI'
+        TabOrder = 1
+        OnClick = ButtonNvidiaSmiClick
+      end
+      object BtSDWeb: TButton
+        Left = 160
+        Height = 25
+        Top = 104
+        Width = 150
+        Caption = 'Stable Diffusion Web Ui'
+        TabOrder = 2
+        OnClick = BtSDWebClick
+      end
+      object BtlangflowWeb: TButton
+        Left = 160
+        Height = 25
+        Top = 136
+        Width = 150
+        Caption = 'LangFlow'
+        TabOrder = 3
+        OnClick = BtlangflowWebClick
+      end
+      object BtJupyterWeb: TButton
+        Left = 160
+        Height = 25
+        Top = 72
+        Width = 150
+        Caption = 'Open Jupyter'
+        TabOrder = 4
+        OnClick = BtJupyterWebClick
+      end
+      object BtFlowiseWeb: TButton
+        Left = 160
+        Height = 25
+        Top = 168
+        Width = 150
+        Caption = 'Flowise'
+        TabOrder = 5
+        OnClick = BtFlowiseWebClick
+      end
+      object CbLangflowSrv: TCheckBox
+        Left = 16
+        Height = 21
+        Top = 142
+        Width = 128
+        Caption = 'LangFlow Service'
+        TabOrder = 6
+        OnChange = CbLangflowSrvChange
+      end
+      object CbSdSrv: TCheckBox
+        Left = 16
+        Height = 21
+        Top = 110
+        Width = 87
+        Caption = 'SD Service'
+        TabOrder = 7
+        OnChange = CbSdSrvChange
+      end
+      object Label2: TLabel
+        Left = 40
+        Height = 15
+        Top = 16
+        Width = 238
+        Caption = 'SERVICES                           LAUNCH ACCESS'
+      end
+      object CbJupyterSrv: TCheckBox
+        Left = 16
+        Height = 21
+        Top = 78
+        Width = 140
+        Caption = 'Jupyter Lab Service'
+        TabOrder = 8
+        OnChange = CbJupyterSrvChange
+      end
+      object CbOllamaSrv: TCheckBox
+        Left = 16
+        Height = 21
+        Top = 46
+        Width = 113
+        Caption = 'Ollama Service'
+        TabOrder = 9
+        OnChange = CbOllamaSrvChange
+      end
+      object CbFlowiseServ: TCheckBox
+        Left = 16
+        Height = 21
+        Top = 174
+        Width = 115
+        Caption = 'Flowise Service'
+        TabOrder = 10
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Automação'
+    end
+  end
+  object TestButton: TButton
+    Left = 24
+    Height = 25
+    Top = 296
+    Width = 120
+    Caption = 'Operating System'
+    TabOrder = 5
+    OnClick = TestButtonClick
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 22
+    Top = 331
+    Width = 481
+    Panels = <>
+  end
+end

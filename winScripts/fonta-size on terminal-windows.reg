@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Console]
+"FaceName"="Consolas"  ; Define a fonte, por exemplo, Consolas
+"FontSize"=dword:000e0000      ; Define o tamanho da fonte como 8 pixels de altura
+;"ScreenBufferSize"=dword:000a0028    ; Buffer de tela 80 colunas, 24 linhas
+;"WindowSize"=dword:000a0028    ; Tamanho da janela do console (80 colunas, 24 linhas)
