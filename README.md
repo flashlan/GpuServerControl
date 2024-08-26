@@ -19,4 +19,4 @@ Funciona em MacOs, Linux e Windows: não necessário alterar codigo para compila
 TODO: adicionar aplicativos de automação na segunda aba, tenho n8n e outros semelhantes em maquinas 
 virtuais no mesmo servidor local.
 
-![Alt text](gpuserverControl__macos.png?raw=true "Running on MacOs")
+![Alt text](gpuServerControl_macOs.png?raw=true "Running on MacOs")
